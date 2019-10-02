@@ -1,0 +1,18 @@
+
+version: 1.0.0
+maxFileSystemBytes: 512K
+executables:
+{
+	helloJava = ( HttpGetCallComponent )
+}
+
+processes:
+{
+	run:
+	{
+		( helloJava )
+	}
+
+	maxCoreDumpFileBytes: 512K
+	maxFileBytes: 512K
+}
